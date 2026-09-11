@@ -15,7 +15,7 @@ a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outli
 .header-link span, .button span, .service-card a span { font-size: 17px; line-height: 0; }
 .section-shell { padding-left: 28px; padding-right: 28px; }
 .hero { min-height: clamp(430px, 48vh, 600px); display: flex; flex-direction: column; justify-content: space-between; padding-top: 30px; padding-bottom: 22px; }
-.eyebrow { margin: 0; }
+.eyebrow { margin: 0; text-align: center; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-weight: 600; letter-spacing: -.075em; line-height: .88; }
 h1 { font-size: clamp(64px, 11vw, 168px); margin: 58px 0 28px; }
