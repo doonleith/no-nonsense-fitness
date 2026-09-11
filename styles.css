@@ -10,7 +10,7 @@ a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outli
 .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; background: var(--ink); border-bottom: 1px solid var(--paper); }
 .brand { display: block; width: 96px; height: 96px; overflow: hidden; border-radius: 50%; background: var(--ink); text-decoration: none; }
 .brand img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.header-link, .overline, .eyebrow, .service-index, .review-source, .section-number, .hero-bottom, .site-footer { font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
+.header-link, .overline, .eyebrow, .service-index, .review-source, .hero-bottom, .site-footer { font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
 .header-link { text-decoration: none; padding-top: 4px; }
 .header-link span, .button span, .service-card a span { font-size: 17px; line-height: 0; }
 .section-shell { padding-left: 28px; padding-right: 28px; }
@@ -29,13 +29,12 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .button-dark { background: var(--paper); color: var(--ink); }
 .hero-bottom { display: flex; justify-content: space-between; padding-top: 32px; border-top: 1px solid var(--paper); }
 .section-rule { border-top: 1px solid var(--paper); }
-.intro, .proof, .about { display: grid; grid-template-columns: 120px minmax(0, 1fr) minmax(220px, .55fr); gap: 28px; padding-top: 95px; padding-bottom: 100px; }
-.section-number { margin: 0; }
+.intro, .proof, .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .55fr); gap: 28px; padding-top: 95px; padding-bottom: 100px; }
 .overline { margin-bottom: 24px; }
 h2 { font-size: clamp(44px, 7.1vw, 105px); margin-bottom: 0; }
 .body-copy, .about-copy p, .proof-note { font-size: 18px; line-height: 1.32; margin: 0; align-self: end; }
 .services { padding-top: 95px; padding-bottom: 100px; }
-.services-header { display: grid; grid-template-columns: 120px 1fr; gap: 28px; }
+.services-header { display: grid; grid-template-columns: 1fr; }
 .service-grid { display: grid; grid-template-columns: 1fr 1fr; margin-top: 44px; border: 1px solid var(--paper); }
 .service-card { min-height: 510px; padding: 24px; display: flex; flex-direction: column; }
 .service-card + .service-card { border-left: 1px solid var(--paper); }
@@ -55,13 +54,13 @@ h2 { font-size: clamp(44px, 7.1vw, 105px); margin-bottom: 0; }
 .gallery-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(.88); transition: transform .5s ease; }
 .gallery-photo:hover img { transform: scale(1.025); }
 .gallery-photo:active img { transform: scale(1.025); }
-.proof-content { grid-column: 2; max-width: 700px; }
-.proof-photo { grid-column: 3; align-self: end; margin: 0; aspect-ratio: 3 / 4; overflow: hidden; background: #111; }
+.proof-content { grid-column: 1; max-width: 700px; }
+.proof-photo { grid-column: 2; align-self: end; margin: 0; aspect-ratio: 3 / 4; overflow: hidden; background: #111; }
 .proof-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 45% center; filter: contrast(1.08) saturate(.9); }
 blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spacing: -.065em; line-height: .98; margin: 0 0 23px; }
 .review-source { margin-bottom: 62px; }
 .proof-note { max-width: 360px; }
-.about { grid-template-columns: 120px minmax(0, 1.2fr) minmax(220px, .5fr); }
+.about { grid-template-columns: minmax(0, 1.2fr) minmax(220px, .5fr); }
 .about-photo { margin: 42px 0 0; max-width: 430px; aspect-ratio: 3 / 4; overflow: hidden; background: #111; }
 .about-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; filter: contrast(1.04); }
 .about-copy { align-self: end; }
@@ -86,9 +85,7 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
   .hero-side p { font-size: 16px; }
   .hero-bottom { gap: 12px; flex-wrap: wrap; }
   .intro, .proof, .about, .services, .cta { padding-top: 65px; padding-bottom: 66px; }
-  .section-number { margin-bottom: 44px; }
   .body-copy { margin-top: 36px; font-size: 16px; }
-  .services-header { display: block; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 440px; }
   .service-card + .service-card { border-left: 0; border-top: 1px solid var(--paper); }
