@@ -8,4 +8,5 @@ markdown:
 collections_config:
   pages:
     path: ''
+    url: /
     icon: wysiwyg
