@@ -72,10 +72,6 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
 .button-light { background: var(--ink); color: var(--paper); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; background: var(--ink); color: var(--paper); padding: 20px 28px; border-top: 1px solid #555; }
 .site-footer p { margin: 0; }.site-footer a { text-decoration: none; }.footer-contact, .footer-email, .footer-socials { display: flex; gap: 20px; }
-@media (min-width: 721px) and (max-width: 900px) {
-  .intro, .proof, .about { grid-template-columns: 80px minmax(0, 1fr) minmax(160px, .5fr); gap: 20px; }
-  .services-header { grid-template-columns: 80px 1fr; gap: 20px; }
-}
 @media (max-width: 720px) {
   .site-header, .section-shell, .site-footer { padding-left: 17px; padding-right: 17px; }
   .site-header { padding-top: 12px; padding-bottom: 12px; }
