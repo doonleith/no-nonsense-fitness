@@ -27,7 +27,7 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .button:hover { transform: translate(-3px,-3px); }
 .button:active { transform: translate(-1px,-1px); opacity: .88; }
 .button-dark { background: var(--paper); color: var(--ink); }
-.page-signoff { padding-top: 32px; padding-bottom: 22px; border-top: 1px solid var(--paper); }
+.page-signoff { padding-top: 32px; padding-bottom: 22px; border-top: 1px solid var(--paper); text-align: center; }
 .section-rule { border-top: 1px solid var(--paper); }
 .intro, .proof, .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .55fr); gap: 28px; padding-top: 95px; padding-bottom: 100px; }
 .overline { margin-bottom: 24px; }
