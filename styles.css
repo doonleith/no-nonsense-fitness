@@ -69,6 +69,7 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
 @media (min-width: 901px) {
   .hero { min-height: clamp(530px, 58vh, 720px); padding-top: 44px; padding-bottom: 85px; }
   .intro h2 { font-size: clamp(44px, 5.6vw, 90px); }
+  .intro-copy { margin-top: 65px; }
   .about { grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr); }
   .about-photo { max-width: 520px; }
   .about-copy { max-width: 560px; }
