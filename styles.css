@@ -1,7 +1,7 @@
 :root { --ink: #050505; --paper: #f7f7f5; --accent: #dfff43; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--ink); color: var(--paper); font-family: "Montserrat", Arial, sans-serif; }
+body { margin: 0; background: var(--ink); color: var(--paper); font-family: "Montserrat", Arial, sans-serif; -webkit-user-select: none; user-select: none; }
 a { color: inherit; }
 a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .service-card-dark a:focus-visible, .cta .button:focus-visible { outline-color: var(--ink); }
