@@ -70,8 +70,11 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
 .cta h2 { font-size: clamp(65px, 11vw, 166px); margin: 40px 0 28px; }
 .cta > p:not(.overline) { max-width: 390px; font-size: 18px; line-height: 1.3; margin-bottom: 32px; }
 .button-light { background: var(--ink); color: var(--paper); }
-.site-footer { display: flex; justify-content: space-between; gap: 20px; background: var(--ink); color: var(--paper); padding: 20px 28px; border-top: 1px solid #555; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; background: var(--ink); color: var(--paper); padding: 20px 28px; border-top: 1px solid #555; }
 .site-footer p { margin: 0; }.site-footer a { text-decoration: none; }.footer-contact, .footer-email, .footer-socials { display: flex; gap: 20px; }
+@media (max-width: 900px) {
+  .button { padding: 17px; }
+}
 @media (max-width: 720px) {
   .site-header, .section-shell, .site-footer { padding-left: 17px; padding-right: 17px; }
   .site-header { padding-top: 12px; padding-bottom: 12px; }
@@ -92,6 +95,5 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
   .proof-photo { margin-top: 40px; width: min(100%, 360px); aspect-ratio: 4 / 5; }
   blockquote { font-size: 32px; }.proof-note { font-size: 16px; }.about-copy { margin-top: 38px; }.about-copy p { font-size: 16px; }
   .about-photo { margin-top: 30px; max-width: none; }
-  .button { padding: 17px; }
   .site-footer { display: grid; grid-template-columns: 1fr; gap: 8px; }.footer-contact, .footer-email, .footer-socials { flex-wrap: wrap; gap: 8px 16px; }
 }
