@@ -42,7 +42,8 @@ h2 { font-size: clamp(44px, 7.1vw, 105px); margin-bottom: 0; }
 .service-index { margin-bottom: auto; }
 .service-card h3 { font-size: clamp(43px, 5vw, 76px); margin: 78px 0 25px; }
 .service-card p:not(.service-index) { max-width: 365px; font-size: 17px; line-height: 1.3; }
-.service-card a { margin-top: auto; font-family: "DM Mono", monospace; font-size: 11px; display: flex; justify-content: space-between; text-decoration: none; border-top: 1px solid currentColor; padding-top: 13px; }
+.service-card a { margin-top: auto; font-family: "DM Mono", monospace; font-size: 11px; display: flex; align-items: flex-end; justify-content: flex-start; gap: 8px; text-decoration: none; border-top: 1px solid currentColor; padding-top: 13px; }
+.service-card a span { line-height: 1; }
 .intro-copy { align-self: end; }
 .intro-photo { width: min(100%, 430px); margin: 32px 0 0; aspect-ratio: 4 / 5; overflow: hidden; background: #111; }
 .intro-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(.88); }
