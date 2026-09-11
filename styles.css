@@ -12,7 +12,7 @@ a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outli
 .brand img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .header-link, .overline, .eyebrow, .service-index, .review-source, .page-signoff, .site-footer { font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
 .header-link { text-decoration: none; padding-top: 4px; }
-.header-link span[aria-hidden="true"], .button span[aria-hidden="true"], .service-card a span[aria-hidden="true"] { font-size: 17px; line-height: 0; }
+.header-link span[aria-hidden="true"], .service-card a span[aria-hidden="true"] { font-size: 17px; line-height: 0; }
 .section-shell { padding-left: 28px; padding-right: 28px; }
 .hero { min-height: clamp(430px, 48vh, 600px); display: flex; flex-direction: column; justify-content: space-between; padding-top: 30px; padding-bottom: 22px; }
 .eyebrow { margin: 0; text-align: center; }
@@ -25,6 +25,7 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .hero-side p { font-size: 18px; line-height: 1.25; max-width: 330px; margin-bottom: 24px; }
 .mobile-only, .mobile-line-break { display: none; }
 .button { display: inline-flex; gap: 28px; align-items: center; justify-content: space-between; padding: 15px 17px; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .025em; text-decoration: none; transition: transform .2s ease, background .2s ease, opacity .2s ease; }
+.button::after { content: "↗"; font-size: 17px; line-height: 0; }
 .button:hover { transform: translate(-3px,-3px); }
 .button:active { transform: translate(-1px,-1px); opacity: .88; }
 .button-dark { background: var(--paper); color: var(--ink); }
