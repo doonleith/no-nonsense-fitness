@@ -88,7 +88,7 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
   .intro, .proof, .about, .services, .cta { padding-top: 65px; padding-bottom: 66px; }
   .section-number { margin-bottom: 44px; }
   .body-copy { margin-top: 36px; font-size: 16px; }
-  .services-header { grid-template-columns: 80px 1fr; }
+  .services-header { display: block; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 440px; }
   .service-card + .service-card { border-left: 0; border-top: 1px solid var(--paper); }
