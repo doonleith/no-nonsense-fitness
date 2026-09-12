@@ -45,6 +45,7 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .transformations-hero > p:last-child { max-width: 510px; margin-bottom: 0; font-size: 18px; line-height: 1.32; }
 .transformations-list { padding-top: 0; padding-bottom: 100px; }
 .transformation-card { display: grid; grid-template-columns: minmax(240px, .6fr) minmax(0, 1.4fr); gap: clamp(28px, 6vw, 110px); padding: 74px 0; border-bottom: 1px solid var(--paper); }
+.transformation-card:last-child { border-bottom: 0; }
 .transformation-copy h2 { font-size: clamp(42px, 5.4vw, 78px); margin-bottom: 26px; }
 .transformation-copy > p:last-child { max-width: 300px; margin-bottom: 0; font-size: 17px; line-height: 1.32; }
 .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
