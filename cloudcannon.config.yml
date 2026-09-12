@@ -8,5 +8,13 @@ markdown:
 collections_config:
   pages:
     path: ''
+    glob:
+      - index.html
     url: /
+    icon: wysiwyg
+  transformations:
+    path: transformations
+    glob:
+      - index.html
+    url: /transformations/
     icon: wysiwyg
