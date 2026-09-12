@@ -10,6 +10,15 @@ a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outli
 .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: flex-end; min-height: 117px; padding: 10px 28px; background: var(--ink); border-bottom: 1px solid var(--paper); }
 .brand { position: absolute; left: 50%; display: block; width: 96px; height: 96px; overflow: hidden; border-radius: 50%; background: var(--ink); text-decoration: none; transform: translateX(-50%); }
 .brand img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.site-menu { position: absolute; top: 50%; left: 28px; z-index: 1; transform: translateY(-50%); }
+.site-menu summary { display: grid; width: 28px; gap: 5px; cursor: pointer; list-style: none; }
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu summary span { display: block; width: 28px; height: 1px; background: var(--paper); transition: transform .2s ease, opacity .2s ease; }
+.site-menu[open] summary span:first-child { transform: translateY(6px) rotate(45deg); }
+.site-menu[open] summary span:nth-child(2) { opacity: 0; }
+.site-menu[open] summary span:last-child { transform: translateY(-6px) rotate(-45deg); }
+.menu-panel { position: absolute; top: calc(100% + 16px); left: 0; min-width: 194px; padding: 16px; border: 1px solid var(--paper); background: var(--ink); }
+.menu-panel a { display: block; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; text-decoration: none; }
 .header-link, .overline, .eyebrow, .service-index, .review-source, .page-signoff, .site-footer { font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
 .header-link { text-decoration: none; padding-top: 4px; }
 .header-link span[aria-hidden="true"], .service-card a span[aria-hidden="true"] { font-size: 17px; line-height: 0; }
@@ -95,6 +104,7 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
 }
 @media (max-width: 720px) {
   .site-header, .section-shell, .site-footer { padding-left: 17px; padding-right: 17px; }
+  .site-menu { left: 17px; }
   .site-header { min-height: 91px; padding-top: 8px; padding-bottom: 8px; }
   .brand { width: 74px; height: 74px; }
   .hero { min-height: 0; padding-top: 22px; }
