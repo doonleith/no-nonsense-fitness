@@ -24,7 +24,7 @@ a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outli
 @keyframes menu-lift { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-3px); } }
 @media (prefers-reduced-motion: reduce) { .site-menu summary span { transition: none; } .site-menu[open] summary { animation: none; } }
 .menu-panel { position: absolute; top: calc(100% + 16px); left: 0; min-width: 194px; padding: 16px; border: 1px solid var(--paper); background: var(--ink); }
-.menu-panel a { display: block; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; text-decoration: none; }
+.menu-panel a { display: block; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; text-align: center; text-decoration: none; }
 .header-link, .overline, .eyebrow, .service-index, .review-source, .page-signoff, .site-footer { font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
 .header-link { text-decoration: none; padding-top: 4px; }
 .header-link span[aria-hidden="true"], .service-card a span[aria-hidden="true"] { font-size: 17px; line-height: 0; }
