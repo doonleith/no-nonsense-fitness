@@ -39,8 +39,8 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .hero-side { padding-bottom: 12px; }
 .hero-side p { font-size: 18px; line-height: 1.25; max-width: 330px; margin-bottom: 24px; }
 .mobile-only, .mobile-line-break { display: none; }
-.button { display: inline-flex; gap: 28px; align-items: center; justify-content: space-between; padding: 15px 17px; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .025em; text-decoration: none; transition: transform .2s ease, background .2s ease, opacity .2s ease; }
-.button::after { content: "↗"; font-size: 17px; line-height: 0; }
+.button { display: inline-flex; gap: 10px; align-items: flex-end; justify-content: center; padding: 15px 17px; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .025em; text-align: center; text-decoration: none; transition: transform .2s ease, background .2s ease, opacity .2s ease; }
+.button::after { content: "↗"; font-size: 17px; line-height: 11px; transform: translateY(-1px); }
 .button:hover { transform: translate(-3px,-3px); }
 .button:active { transform: translate(-1px,-1px); opacity: .88; }
 .button-dark { background: var(--paper); color: var(--ink); }
