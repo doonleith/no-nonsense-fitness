@@ -54,10 +54,10 @@ em { font-family: inherit; font-style: normal; font-weight: 400; letter-spacing:
 .transformation-card:last-child { border-bottom: 0; }
 .transformation-copy h2 { font-size: clamp(42px, 5.4vw, 78px); margin-bottom: 26px; }
 .transformation-copy > p:last-child { max-width: 300px; margin-bottom: 0; font-size: 17px; line-height: 1.32; }
-.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.comparison-photo { margin: 0; }
-.photo-placeholder { display: grid; min-height: 360px; aspect-ratio: 3 / 4; place-items: center; border: 1px solid var(--paper); background: #111; color: var(--paper); font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
-.comparison-photo figcaption { margin-top: 10px; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
+.transformation-collage { width: min(100%, 440px); margin: 0; align-self: start; }
+.transformation-collage img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.photo-placeholder { display: grid; width: 100%; min-height: 360px; aspect-ratio: 1; place-items: center; border: 1px solid var(--paper); background: #111; color: var(--paper); font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
+.transformation-collage figcaption { margin-top: 10px; font-family: "DM Mono", monospace; font-size: 11px; letter-spacing: .035em; }
 .intro, .proof, .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .55fr); gap: 28px; padding-top: 95px; padding-bottom: 100px; }
 .overline { margin-bottom: 24px; }
 h2 { font-size: clamp(44px, 7.1vw, 105px); margin-bottom: 0; }
@@ -142,7 +142,6 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
   .transformation-card { display: block; padding: 64px 0; }
   .transformation-copy h2 { margin-bottom: 22px; }
   .transformation-copy > p:last-child { margin-bottom: 34px; font-size: 16px; }
-  .comparison-grid { gap: 10px; }
   .photo-placeholder { min-height: 220px; }
   .site-footer { display: grid; grid-template-columns: 1fr; gap: 8px; }
   .footer-contact, .footer-email, .footer-socials { flex-wrap: wrap; gap: 8px 16px; }
