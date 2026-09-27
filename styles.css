@@ -146,3 +146,4 @@ blockquote { font-size: clamp(36px, 5.7vw, 86px); font-weight: 500; letter-spaci
   .site-footer { display: grid; grid-template-columns: 1fr; gap: 8px; }
   .footer-contact, .footer-email, .footer-socials { flex-wrap: wrap; gap: 8px 16px; }
 }
+[contenteditable="true"], [contenteditable="true"] * { -webkit-user-select: text; user-select: text; cursor: text; }
