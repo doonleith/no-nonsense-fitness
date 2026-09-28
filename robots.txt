@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nononsensefitness.co.uk/sitemap.xml
